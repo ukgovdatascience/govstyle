@@ -12,18 +12,28 @@ A package for producing graphics following the [gov.uk](http://www.gov.uk) style
 
 ## Examples
 
+```{r, echo=FALSE, include=FALSE}
 
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  error = FALSE
+  )
 
+```
 
-```r
+```{r}
+
 library(ggplot2)
 library(dplyr)
 #devtools::install_github("ivyleavedtoadflax/govstyle")
 library(govstyle)
+
+
 ```
 
+```{r}
 
-```r
 p <- mtcars %>%
   ggplot +
   aes(
@@ -34,13 +44,8 @@ p <- mtcars %>%
   geom_point()
 
 p
-```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
-
-```r
 p +
   theme_gov()
-```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-2.png)
+```

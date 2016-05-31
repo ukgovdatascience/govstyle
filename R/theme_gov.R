@@ -1,10 +1,89 @@
-theme_DfE <- function(base_size = 12, base_family = "Arial", base_colour = "gray40", axes = "x") {
+#    govstyle: Applying gov.uk based styles to R plots.
+#    A package for the R statistical environment
+#    Copyright (C) 2016  Matthew Upson <matthew.a.upson@gmail.com>
+#
+#    Permission is hereby granted, free of charge, to any person obtaining
+#    a copy of this software and associated documentation files (the
+#    "Software"), to deal in the Software without restriction, including
+#    without limitation the rights to use, copy, modify, merge, publish,
+#    distribute, sublicense, and/or sell copies of the Software, and to
+#    permit persons to whom the Software is furnished to do so, subject to
+#    the following conditions:
+#
+#    The above copyright notice and this permission notice shall be
+#    included in all copies or substantial portions of the Software.
+#
+#    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+#    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+#    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+#    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+#    LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+#    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+#    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+#' @title \code{theme_gov} A government theme for \code{\link{ggplot2}}
+#'
+#' @description \code{theme_gov} Provides a theme for ggplot2 to produce
+#' government style visualisations in \code{\link{ggplot2}}.
+#'
+#' @details Builds on the 'grammar of graphics' framework implement in
+#' ggplot2. Applying \code{theme_gov()} will adjust graphical parameters
+#' to give a plot a feel more in line with gov.uk.
+#'
+#' @param base_size Integer. Sets the base size of text for the plot.
+#' Defaults to \code{12}.
+#' @param base_family Character string. Sets the base font family for the
+#'  plot. Defaults to \code{Arial}. Note that this misbehaves under some
+#'  systems, and will depend on font availability.
+#' @param base_colour Character string. Sets the default colour of axes
+#'  and axis labels. Must be a named R colour or hexadecimal colour code
+#' (e.g. "#FF0000"). Defaults to \code{gray40}.
+#' @param axes Character string. Specifies the presence or absence of axes
+#' Must be one of \code{n} (no axes), \code{x} (only x axis), \code{y}
+#' (only y axis), or \code{xy} (both axes shown).
+#'
+#' @return Will not return anything of itself, but when used in conjuntion
+#' with \code{\link{ggplot}} and (e.g.) \code{\link{geom_point}} from the
+#' package \code{\link{ggplot2}}, will apply styling to a plot.
+#'
+#' @examples
+#'
+#'\dontrun{
+#' library(ggplot2)
+#' library(govstyle)
+#' library(dplyr)
+#'
+#' p <- mtcars %>%
+#'    ggplot +
+#'    aes(
+#'    x = mpg,
+#'    y = wt
+#'    ) +
+#'    geom_point()
+#'
+#' # Plot without any theme applied
+#'
+#' p
+#'
+#' # Now apply gov theme
+#'
+#' p +
+#'  theme_gov()
+#'    }
+#'
+#' @export
+
+
+theme_gov <- function(
+  base_size = 12,
+  base_family = "Arial",
+  base_colour = "gray40",
+  axes = "x"
+  ) {
 
   if (!axes %in% c("n","x","y","xy")) {
 
     stop("axes must be one of 'n', 'x', 'y', or 'xy'")
-    stop("This error message was written by Matthew Upson")
-    stop("email matthew.upson@education.gsi.gov.uk if you get really stuck!")
 
   }
 
@@ -148,15 +227,3 @@ theme_DfE <- function(base_size = 12, base_family = "Arial", base_colour = "gray
 #   )
 # }
 
-check_pal <- function(x) {
-
-  pie(rep(1,length(x)),col = x, labels = names(x))
-
-}
-
-message("**** DfE graphing theme loaded ****")
-message("Version: v0.1.0 (2015-11-23)")
-message("For questions and comments, contact:")
-message("matthew.upson@education.gsi.gov.uk")
-#message("theme_DfE() function loaded")
-#message("DfE_cols colour vector loaded")

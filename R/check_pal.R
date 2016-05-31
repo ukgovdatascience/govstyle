@@ -21,47 +21,34 @@
 #    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 #    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-#' @title A vector of the gov.uk approved colours
+#' @title Show colours in gov.uk colour palette
 #'
-#' @description \code{\link{gov_cols}} Provides a vector of named colours
-#' from the approved gov.uk colour list available \url{here}.
+#' @description \code{\link{check_pal}} produces a bar chart showing the
+#' gov.uk approved colours as available \url{here} and in the vector
+#' \code{\link{gov_cols}}.
 #'
-#' @return A list of named hexadecimal colours.
+#' @param x A vector of colours. Defaults to \code{\link{gov_cols}}.
+#'
+#' @return A bar chart displaying the gov.uk approved colour scheme.
 #'
 #' @examples
 #'
 #'\dontrun{
-#' library(ggplot2)
 #' library(govstyle)
-#' library(dplyr)
 #'
-#' mtcars %>%
-#'    ggplot +
-#'    aes(
-#'    x = mpg,
-#'    y = wt
-#'    ) +
-#'    geom_point(
-#'    colour = gov_cols["green"]
-#'    ) +
-#'    theme_gov()
+#' check_pal()
 #'    }
 #'
 #' @export
 #'
-gov_cols <- c(
-  purple      = "#2E358B",
-  pink        = "#D53880",
-  mellow_red  = "#DF3034",
-  yellow      = "#FFBF47",
-  turquoise   = "#28A197",
-  mauve       = "#6F72AF",
-  baby_pink   = "#F499BE",
-  orange      = "#F47738",
-  green       = "#006435",
-  light_blue  = "#2B8CC4",
-  fuschia     = "#912B88",
-  red         = "#B10E1E",
-  brown       = "#B58840",
-  grass_green = "#85994B"
-)
+#'
+check_pal <- function(
+  x = gov_cols
+  ) {
+
+  pie(
+    rep(1, length(x)),
+    col = x,
+    labels = names(x))
+
+}
