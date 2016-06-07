@@ -17,7 +17,6 @@ from the approved gov.uk colour list available \url{here}.
 }
 \examples{
 
-\dontrun{
 library(ggplot2)
 library(govstyle)
 library(dplyr)
@@ -32,7 +31,6 @@ mtcars \%>\%
    colour = gov_cols["green"]
    ) +
    theme_gov()
-   }
 
 }
 \keyword{datasets}

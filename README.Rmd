@@ -5,12 +5,12 @@ A package for producing graphics following the [gov.uk](http://www.gov.uk) style
 ## Functions
 
 * `theme_gov()`: Theme to be applied to plots produced in [ggplot2]() to give a government statistics publication feel.
-
-## Colour lists
-
-* `gov_cols`: A vector of the [gov.uk]() approved colours.
+* `check_pal()`: Display the a gov.uk recommended colours in a pie chart.
+* `gov_cols`: A vector of the [gov.uk]() recommended colours.
 
 ## Examples
+
+### theme_gov
 
 ```{r, echo=FALSE, include=FALSE}
 
@@ -47,5 +47,37 @@ p
 
 p +
   theme_gov()
+
+```
+
+### check_pal
+
+```{r}
+
+## Show gov.uk colours
+
+check_pal()
+
+## Show a subset of gov.uk colours
+
+## Choose n colours:
+
+check_pal(2)
+
+check_pal(3)
+
+check_pal(4)
+
+## Pick a range of colours
+
+check_pal(3:8)
+
+check_pal(c(1,10))
+
+## Pick colours manually
+
+check_pal(
+  x = gov_cols[c("green", "grass_green")]
+  )
 
 ```

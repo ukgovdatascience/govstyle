@@ -30,7 +30,6 @@
 #'
 #' @examples
 #'
-#'\dontrun{
 #' library(ggplot2)
 #' library(govstyle)
 #' library(dplyr)
@@ -45,10 +44,10 @@
 #'    colour = gov_cols["green"]
 #'    ) +
 #'    theme_gov()
-#'    }
 #'
 #' @export
 #'
+
 gov_cols <- c(
   purple      = "#2E358B",
   pink        = "#D53880",

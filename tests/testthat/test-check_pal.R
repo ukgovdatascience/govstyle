@@ -10,7 +10,7 @@ test_that(
     library(png)
 
     png(
-      file = "./tests/testthat/test-check_pal_test.png",
+      file = "test-check_pal_test.png",
       width = 480,
       height = 480
       )
@@ -18,9 +18,9 @@ test_that(
     dev.off()
 
     isSimilar(
-      file = "tests/testthat/test-check_pal_reference.png",
+      file = "test-check_pal_reference.png",
       fingerprint = getFingerprint(
-        file = "./tests/testthat/test-check_pal_test.png"
+        file = "test-check_pal_test.png"
         ),
       threshold = 1e-3
       )

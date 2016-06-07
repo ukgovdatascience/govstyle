@@ -48,7 +48,7 @@
 #'
 #' @examples
 #'
-#'\dontrun{
+#'
 #' library(ggplot2)
 #' library(govstyle)
 #' library(dplyr)
@@ -69,7 +69,7 @@
 #'
 #' p +
 #'  theme_gov()
-#'    }
+#'
 #'
 #' @export
 

@@ -7,7 +7,9 @@
 check_pal(x = gov_cols)
 }
 \arguments{
-\item{x}{A vector of colours. Defaults to \code{\link{gov_cols}}.}
+\item{\code{x}}{Either an integer in which case: display \code{gov_cols(1:x)}
+or a character or integer vector, in which case return \code{gov_cols(x)}.
+Can also be specified manually: see examples.}
 }
 \value{
 A bar chart displaying the gov.uk approved colour scheme.
@@ -19,11 +21,28 @@ gov.uk approved colours as available \url{here} and in the vector
 }
 \examples{
 
-\dontrun{
+
 library(govstyle)
 
-check_pal()
-   }
+## Show a subset of gov.uk colours
+
+## Choose n colours:
+
+check_pal(2)
+
+check_pal(4)
+
+## Pick a range of colours
+
+check_pal(3:8)
+
+check_pal(c(1,10))
+
+## Pick with character vector
+
+check_pal(
+x = gov_cols[c("green", "grass_green")]
+)
 
 }
 

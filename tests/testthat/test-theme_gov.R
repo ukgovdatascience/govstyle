@@ -4,9 +4,6 @@ test_that(
   "theme_gov can be applied to a plot",
   {
 
-    library(visualTest)
-    library(png)
-
     p <- ggplot(
       data = mtcars,
       aes(
@@ -20,14 +17,14 @@ test_that(
     ggsave(
       width = 5,
       height = 5,
-      filename = "./tests/testthat/test-theme_gov-test.png",
+      filename = "test-theme_gov-test.png",
       plot = p
       )
 
     isSimilar(
-      file = "tests/testthat/test-theme_gov-reference.png",
+      file = "test-theme_gov-reference.png",
       fingerprint = getFingerprint(
-        file = "tests/testthat/test-theme_gov-test.png"
+        file = "test-theme_gov-test.png"
         ),
       threshold = 1e-3
       )
