@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ivyleavedtoadflax/govstyle.svg?branch=master)](https://travis-ci.org/ivyleavedtoadflax/govstyle)
+
 # govstyle
 
 A package for producing graphics following the [gov.uk](http://www.gov.uk) style.
