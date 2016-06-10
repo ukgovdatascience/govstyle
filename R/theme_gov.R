@@ -21,10 +21,10 @@
 #    OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 #    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-#' @title \code{theme_gov} A government theme for \code{\link{ggplot2}}
+#' @title \code{theme_gov} A government theme for \code{ggplot2}
 #'
 #' @description \code{theme_gov} Provides a theme for ggplot2 to produce
-#' government style visualisations in \code{\link{ggplot2}}.
+#' government style visualisations in \code{ggplot2}.
 #'
 #' @details Builds on the 'grammar of graphics' framework implement in
 #' ggplot2. Applying \code{theme_gov()} will adjust graphical parameters
@@ -32,9 +32,6 @@
 #'
 #' @param base_size Integer. Sets the base size of text for the plot.
 #' Defaults to \code{12}.
-#' @param base_family Character string. Sets the base font family for the
-#'  plot. Defaults to \code{Arial}. Note that this misbehaves under some
-#'  systems, and will depend on font availability.
 #' @param base_colour Character string. Sets the default colour of axes
 #'  and axis labels. Must be a named R colour or hexadecimal colour code
 #' (e.g. "#FF0000"). Defaults to \code{gray40}.
@@ -44,7 +41,7 @@
 #'
 #' @return Will not return anything of itself, but when used in conjuntion
 #' with \code{\link{ggplot}} and (e.g.) \code{\link{geom_point}} from the
-#' package \code{\link{ggplot2}}, will apply styling to a plot.
+#' package \code{ggplot2}, will apply styling to a plot.
 #'
 #' @examples
 #'
@@ -70,13 +67,13 @@
 #' p +
 #'  theme_gov()
 #'
-#'
+#' @import ggplot2
 #' @export
+#'
 
 
 theme_gov <- function(
   base_size = 12,
-  base_family = "Arial",
   base_colour = "gray40",
   axes = "x"
   ) {
@@ -118,36 +115,36 @@ theme_gov <- function(
 
     ## Adjust tick marks
 
-    axis.ticks = element_blank(),
+    axis.ticks = ggplot2::element_blank(),
     #axis.ticks = element_line(colour = "gray40"),
     #axis.ticks.y = element_blank(),
     #axis.ticks.length = grid::unit( -2, "mm"),
 
     ## Adjust the axis lines
 
-    axis.line = element_line(colour = base_colour),
-    axis.line.x = element_line(colour = x_col),
-    axis.line.y = element_line(colour = y_col),
+    axis.line = ggplot2::element_line(colour = base_colour),
+    axis.line.x = ggplot2::element_line(colour = x_col),
+    axis.line.y = ggplot2::element_line(colour = y_col),
 
     ## Set the overall text attributes
 
-    text = element_text(
-      family = base_family, face = "plain", colour = base_colour, size = base_size,
+    text = ggplot2::element_text(
+      face = "plain", colour = base_colour, size = base_size,
       hjust = 0.5, vjust = 0.5, angle = 0, lineheight = 0.8
     ),
-    axis.text = element_text(colour = base_colour),
-    plot.title = element_text(face = "bold", hjust = 1, colour = "black", vjust = -2.5),
+    axis.text = ggplot2::element_text(colour = base_colour),
+    plot.title = ggplot2::element_text(face = "bold", hjust = 1, colour = "black", vjust = -2.5),
 
     ## Axis title attributes. Adjustments of
 
-    axis.title.y = element_text(hjust = 1, vjust = 1),
-    axis.title.x = element_text(hjust = 1, vjust = 6),
+    axis.title.y = ggplot2::element_text(hjust = 1, vjust = 1),
+    axis.title.x = ggplot2::element_text(hjust = 1, vjust = 6),
 
     ## Background attributes (currently all blank)
 
-    panel.background = element_blank(),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
+    panel.background = ggplot2::element_blank(),
+    panel.grid.major = ggplot2::element_blank(),
+    panel.grid.minor = ggplot2::element_blank(),
 
     ##Adjust the margin around the plot. This is highly sensitive to plot, so
     ##probably needs to be set on a plot by plot basis.
@@ -156,10 +153,10 @@ theme_gov <- function(
 
     ## Strip attributes for facet grid and facet wrap
 
-    strip.background =   element_blank(),
-    strip.text =         element_text(color = "black", face = "bold", size = base_size + 1),
-    strip.text.x =       element_text(),
-    strip.text.y =       element_text(angle = -90),
+    strip.background =   ggplot2::element_blank(),
+    strip.text =         ggplot2::element_text(color = "black", face = "bold", size = base_size + 1),
+    strip.text.x =       ggplot2::element_text(),
+    strip.text.y =       ggplot2::element_text(angle = -90),
 
     complete = FALSE
   )

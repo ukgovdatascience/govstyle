@@ -10,7 +10,12 @@ Maintainer: Matthew Upson <matthew.upson@digital.cabinet-office.gov.uk>
 Description: Provides plotting funtions for reproducing plots in
     a more gov.uk friendly style than the default ggplot2
     settings.
-License: MIT
+License: MIT + file LICENSE
 Suggests: dplyr
-Depends:  ggplot2
+Imports:  ggplot2,
+          graphics,
+          testthat,
+          png,
+          devtools,
+          visualTest
 RoxygenNote: 5.0.1

@@ -3,3 +3,4 @@
 export(check_pal)
 export(gov_cols)
 export(theme_gov)
+import(ggplot2)

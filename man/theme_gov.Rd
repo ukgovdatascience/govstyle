@@ -2,18 +2,13 @@
 % Please edit documentation in R/theme_gov.R
 \name{theme_gov}
 \alias{theme_gov}
-\title{\code{theme_gov} A government theme for \code{\link{ggplot2}}}
+\title{\code{theme_gov} A government theme for \code{ggplot2}}
 \usage{
-theme_gov(base_size = 12, base_family = "Arial", base_colour = "gray40",
-  axes = "x")
+theme_gov(base_size = 12, base_colour = "gray40", axes = "x")
 }
 \arguments{
 \item{base_size}{Integer. Sets the base size of text for the plot.
 Defaults to \code{12}.}
-
-\item{base_family}{Character string. Sets the base font family for the
-plot. Defaults to \code{Arial}. Note that this misbehaves under some
-systems, and will depend on font availability.}
 
 \item{base_colour}{Character string. Sets the default colour of axes
  and axis labels. Must be a named R colour or hexadecimal colour code
@@ -26,11 +21,11 @@ Must be one of \code{n} (no axes), \code{x} (only x axis), \code{y}
 \value{
 Will not return anything of itself, but when used in conjuntion
 with \code{\link{ggplot}} and (e.g.) \code{\link{geom_point}} from the
-package \code{\link{ggplot2}}, will apply styling to a plot.
+package \code{ggplot2}, will apply styling to a plot.
 }
 \description{
 \code{theme_gov} Provides a theme for ggplot2 to produce
-government style visualisations in \code{\link{ggplot2}}.
+government style visualisations in \code{ggplot2}.
 }
 \details{
 Builds on the 'grammar of graphics' framework implement in
@@ -39,7 +34,7 @@ to give a plot a feel more in line with gov.uk.
 }
 \examples{
 
-\dontrun{
+
 library(ggplot2)
 library(govstyle)
 library(dplyr)
@@ -60,7 +55,6 @@ p
 
 p +
  theme_gov()
-   }
 
 }
 

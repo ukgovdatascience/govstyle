@@ -3,5 +3,6 @@ cache: packages
 sudo: required
 r_github_packages:
   - jimhester/covr
+  - MangoTheCat/visualTest
 after_success:
   - Rscript -e 'covr::codecov()'

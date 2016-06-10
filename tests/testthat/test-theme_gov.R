@@ -4,7 +4,7 @@ test_that(
   "theme_gov can be applied to a plot",
   {
 
-    p <- ggplot(
+    p <- ggplot2::ggplot(
       data = mtcars,
       aes(
         x = mpg,

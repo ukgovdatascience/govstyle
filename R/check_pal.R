@@ -27,14 +27,13 @@
 #' gov.uk approved colours as available \url{here} and in the vector
 #' \code{\link{gov_cols}}.
 #'
-#' @param \code{x} Either an integer in which case: display \code{gov_cols(1:x)}
+#' @param x Either an integer in which case: display \code{gov_cols(1:x)}
 #'  or a character or integer vector, in which case return \code{gov_cols(x)}.
 #'  Can also be specified manually: see examples.
 #'
-#' @return A bar chart displaying the gov.uk approved colour scheme.
+#' @return A pie chart displaying the gov.uk approved colour scheme.
 #'
 #' @examples
-#'
 #'
 #' library(govstyle)
 #'
@@ -74,7 +73,7 @@ check_pal <- function(
     x <- gov_cols[1:x]
     }
 
-  pie(
+  graphics::pie(
     rep(1, length(x)),
     col = x,
     labels = names(x))

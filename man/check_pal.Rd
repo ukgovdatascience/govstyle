@@ -7,12 +7,12 @@
 check_pal(x = gov_cols)
 }
 \arguments{
-\item{\code{x}}{Either an integer in which case: display \code{gov_cols(1:x)}
+\item{x}{Either an integer in which case: display \code{gov_cols(1:x)}
 or a character or integer vector, in which case return \code{gov_cols(x)}.
 Can also be specified manually: see examples.}
 }
 \value{
-A bar chart displaying the gov.uk approved colour scheme.
+A pie chart displaying the gov.uk approved colour scheme.
 }
 \description{
 \code{\link{check_pal}} produces a bar chart showing the
@@ -20,7 +20,6 @@ gov.uk approved colours as available \url{here} and in the vector
 \code{\link{gov_cols}}.
 }
 \examples{
-
 
 library(govstyle)
 
