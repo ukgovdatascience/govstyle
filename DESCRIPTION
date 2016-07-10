@@ -11,7 +11,11 @@ Description: Provides plotting funtions for reproducing plots in
     a more gov.uk friendly style than the default ggplot2
     settings.
 License: MIT + file LICENSE
-Suggests: dplyr
+Suggests: dplyr,
+          knitr,
+          markdown,
+          readr,
+          tidyr
 Imports:  ggplot2,
           graphics,
           testthat,
@@ -19,3 +23,4 @@ Imports:  ggplot2,
           devtools,
           visualTest
 RoxygenNote: 5.0.1
+VignetteBuilder: knitr
