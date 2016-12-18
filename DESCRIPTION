@@ -11,16 +11,20 @@ Description: Provides plotting funtions for reproducing plots in
     a more gov.uk friendly style than the default ggplot2
     settings.
 License: GPL-3
+Depends:  ggplot2
 Suggests: dplyr,
           knitr,
           markdown,
           readr,
           tidyr,
           visualTest
-Imports:  ggplot2,
-          graphics,
+Imports:  graphics,
           testthat,
           png,
           devtools
+Remotes:  github::mangothecat/visualTest
+BugReports: https://github.com/ukgovdatascience/govstyle/issues
+Encoding: UTF-8
+LazyData: true
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
