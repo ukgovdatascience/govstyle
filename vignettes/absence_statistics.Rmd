@@ -36,7 +36,7 @@ The SFR data are stored as a large (41.7 MB) CSV file within a zip file, which i
 
 Downloading and extracting the data can all be done in R
 
-```{r, eval=TRUE, include=FALSE}
+```{r, eval=TRUE, include=TRUE}
 
 download.file(
 "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/468966/SFR39_2015_Underlying_data.zip", 
