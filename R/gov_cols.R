@@ -39,5 +39,6 @@ gov_cols <- c(
   fuschia     = "#912B88",
   red         = "#B10E1E",
   brown       = "#B58840",
-  grass_green = "#85994B"
+  grass_green = "#85994B",
+  govuk_blue  = "#005EA5"
 )
