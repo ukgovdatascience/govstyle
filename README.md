@@ -21,6 +21,8 @@ The best source of docmentation is the [vignettes](https://github.com/ukgovdatas
  
 ## Installation
 
+__NOTE: packrat is used to managed the development environment for this package. If pull this repo and open it with RStudio, it will begin to install the packages in packrat/src into a library specific for the project. You can disable this behaviour by removing the `.Rprofile` file. However note that tests are completed using the packrat version of any packages, and any contributions must be compatible with these packages. A further discussion of this is given in [#19](https://github.com/ukgovdatascience/govstyle/pull/19).
+
 To install, the package `devtools` is required, and can be installed with `install.packages('devtools')`.
 
 `govstyle` can then be installed using `devtools::install_github('ukgovdatascience/govstyle')`.
