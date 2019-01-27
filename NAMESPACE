@@ -2,5 +2,6 @@
 
 export(check_pal)
 export(gov_cols)
+export(scale_gov)
 export(theme_gov)
 import(ggplot2)
