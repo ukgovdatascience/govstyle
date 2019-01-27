@@ -110,7 +110,7 @@ test_that(
 )
 
 test_that(
-    "scale_gov colours line chart",
+    "scale_gov colours point + line chart",
     {
         # Check whether comparison file exists, and delete if so
         
