@@ -18,7 +18,8 @@ Suggests:
     rmarkdown,
     testthat,
     dplyr,
-    readr
+    readr,
+    knitr
 Remotes: github::mangothecat/visualTest
 BugReports: https://github.com/ukgovdatascience/govstyle/issues
 Encoding: UTF-8
