@@ -2,9 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-UD.zip
-*.csv
-inst
 *.Rproj
-packrat/lib*/
-packrat/src*/

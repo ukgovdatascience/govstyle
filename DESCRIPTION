@@ -16,7 +16,9 @@ Depends: R (>= 2.10),
 Suggests:
     visualTest,
     rmarkdown,
-    testthat
+    testthat,
+    dplyr,
+    readr
 Remotes: github::mangothecat/visualTest
 BugReports: https://github.com/ukgovdatascience/govstyle/issues
 Encoding: UTF-8
