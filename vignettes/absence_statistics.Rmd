@@ -67,12 +67,13 @@ file.info("SFR39_2015_Autumn_Spring_Proposed_SFR_structure.csv")$size
 We also need to install the `govstyle` package.
 This vignette uses version `v0.1.0` - leaving out this argument from `devtools::install_github` will fetch the latest commit on the master branch
 
-```{r}
-
+```{r, eval = FALSE}
 devtools::install_github(
   repo = "ivyleavedtoadflax/govstyle"
 )
+```
 
+```{r}
 library(govstyle)
 ```
 
