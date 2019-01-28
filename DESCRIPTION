@@ -11,19 +11,13 @@ Description: Provides plotting funtions for reproducing plots in
     a more gov.uk friendly style than the default ggplot2
     settings.
 License: GPL-3
-Depends:  R (>= 2.10),
+Depends: R (>= 2.10),
 	  ggplot2
-Suggests: dplyr,
-          knitr,
-          markdown,
-          readr,
-          tidyr,
-          visualTest
-Imports:  graphics,
-          testthat,
-          png,
-          devtools
-Remotes:  github::mangothecat/visualTest
+Suggests:
+    visualTest,
+    rmarkdown,
+    testthat
+Remotes: github::mangothecat/visualTest
 BugReports: https://github.com/ukgovdatascience/govstyle/issues
 Encoding: UTF-8
 LazyData: true
