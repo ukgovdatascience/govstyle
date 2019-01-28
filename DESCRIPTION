@@ -21,7 +21,8 @@ Suggests:
     readr,
     knitr,
     covr,
-    tidyr
+    tidyr,
+    vdiffr
 Remotes: github::mangothecat/visualTest
 BugReports: https://github.com/ukgovdatascience/govstyle/issues
 Encoding: UTF-8
