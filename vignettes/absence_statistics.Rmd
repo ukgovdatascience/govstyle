@@ -440,4 +440,7 @@ illness_summary %>%
 
 
 
+```{r clean-up, include = FALSE}
+if (file.exists("UD.zip")) file.remove("UD.zip")
+```
 
