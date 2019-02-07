@@ -1,10 +1,7 @@
 language: r
 cache: packages
 sudo: required
-r_packages:
-  - rmarkdown
 r_github_packages:
-  - jimhester/covr
   - MangoTheCat/visualTest
 after_success:
   - Rscript -e 'covr::codecov()'
