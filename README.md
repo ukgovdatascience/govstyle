@@ -39,7 +39,7 @@ For some users `devtools::install_local()` may also be required.
 
 ## Examples
 
-See [Vignette](https://github.com/ukgovdatascience/govstyle/blob/master/vignettes/absence_statistics.md) for in depth usage examples.
+See the [vignette](http://ukgovdatascience.github.io/govstyle/articles/absence_statistics.html) for in depth usage examples.
 
 ### theme_gov
 
