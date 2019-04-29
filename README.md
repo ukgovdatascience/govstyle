@@ -17,7 +17,7 @@ to this:
 
 ![govstyle plot](https://raw.githubusercontent.com/ukgovdatascience/govstyle/master/vignettes/figure/figure1d-1.png)
 
-The best source of docmentation is the [vignettes](https://github.com/ukgovdatascience/govstyle/blob/master/vignettes/absence_statistics.md).
+The best source of docmentation is the [vignette](http://ukgovdatascience.github.io/govstyle/articles/absence_statistics.html).
  
 ## Installation
 
