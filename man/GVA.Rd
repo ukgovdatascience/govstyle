@@ -21,4 +21,3 @@ Subset of data extracted from the 2016 Economic Estimates of DCMS Sectors
 \keyword{Economic}
 \keyword{Estimates}
 \keyword{Sectors}
-

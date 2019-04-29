@@ -4,7 +4,7 @@
 \name{gov_cols}
 \alias{gov_cols}
 \title{A vector of the gov.uk approved colours}
-\format{An object of class \code{character} of length 14.}
+\format{An object of class \code{character} of length 15.}
 \usage{
 gov_cols
 }
@@ -34,4 +34,3 @@ mtcars \%>\%
 
 }
 \keyword{datasets}
-
