@@ -12,3 +12,5 @@
 ^packrat/
 ^\.Rprofile$
 ^appveyor\.yml$
+^doc$
+^Meta$
