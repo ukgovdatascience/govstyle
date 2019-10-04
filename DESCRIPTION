@@ -22,7 +22,6 @@ Suggests:
     covr,
     tidyr,
     vdiffr
-Remotes: github::r-lib/vdiffr
 BugReports: https://github.com/ukgovdatascience/govstyle/issues
 Encoding: UTF-8
 LazyData: true
