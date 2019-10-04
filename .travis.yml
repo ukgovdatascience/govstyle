@@ -3,5 +3,7 @@ cache: packages
 sudo: required
 r_github_packages:
   - MangoTheCat/visualTest
+apt_packages:
+  - qpdf
 after_success:
   - Rscript -e 'covr::codecov()'
