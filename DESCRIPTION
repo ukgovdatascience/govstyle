@@ -1,7 +1,7 @@
 Package: govstyle
 Type: Package
 Title: A ggplot2 theme in a gov.uk inspired style
-Version: 0.1.2
+Version: 0.1.3
 Date: 2016-06-07
 Authors@R: c(
     person("Matthew", "Upson", , "matthew.upson@digital.cabinet-office.gov.uk", c("aut", "cre"))
