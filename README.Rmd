@@ -1,5 +1,5 @@
 [![Travis build status](https://travis-ci.org/ukgovdatascience/govstyle.svg?branch=master)](https://travis-ci.org/ukgovdatascience/govstyle)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ukgovdatascience/govstyle?branch=master&svg=true)](https://ci.appveyor.com/project/ukgovdatascience/govstyle)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/nacnudus/govstyle?branch=master&svg=true)](https://ci.appveyor.com/project/nacnudus/govstyle)
 [![Code coverage](http://codecov.io/github/ukgovdatascience/govstyle/coverage.svg?branch=master)](http://codecov.io/github/ukgovdatascience/govstyle?branch=master)
 [![GitHub tag](https://img.shields.io/github/tag/ukgovdatascience/govstyle.svg)]()
 
