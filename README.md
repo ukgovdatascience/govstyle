@@ -1,7 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/ukgovdatascience/govstyle.png?label=ready&title=Ready)](https://waffle.io/ukgovdatascience/govstyle)
-[![Build Status](https://travis-ci.org/ukgovdatascience/govstyle.svg?branch=master)](https://travis-ci.org/ukgovdatascience/govstyle)
-[![Build status](https://ci.appveyor.com/api/projects/status/ra2p80x58kyct1v3/branch/master?svg=true)](https://ci.appveyor.com/project/ivyleavedtoadflax/govstyle/branch/master)
-[![codecov.io](http://codecov.io/github/ukgovdatascience/govstyle/coverage.svg?branch=master)](http://codecov.io/github/ukgovdatascience/govstyle?branch=master)
+[![Travis build status](https://travis-ci.org/ukgovdatascience/govstyle.svg?branch=master)](https://travis-ci.org/ukgovdatascience/govstyle)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ukgovdatascience/govstyle?branch=master&svg=true)](https://ci.appveyor.com/project/ukgovdatascience/govstyle)
+[![Code coverage](http://codecov.io/github/ukgovdatascience/govstyle/coverage.svg?branch=master)](http://codecov.io/github/ukgovdatascience/govstyle?branch=master)
 [![GitHub tag](https://img.shields.io/github/tag/ukgovdatascience/govstyle.svg)]()
 
 # govstyle
@@ -9,7 +8,7 @@
 A package for applying a [gov.uk](http://govuk-elements.herokuapp.com/) style to plots created in the R package [ggplot2](https://github.com/hadley/ggplot2).
 This package *is in an early stage of development*; the intended end point is that it should be fully compliant with the gov.uk style guide.
 
-This package turns plots from this: 
+This package turns plots from this:
 
 ![Basic ggplot2 plot](https://github.com/ukgovdatascience/govstyle/raw/master/vignettes/figure/figure1-1.png)
 
@@ -17,8 +16,8 @@ to this:
 
 ![govstyle plot](https://raw.githubusercontent.com/ukgovdatascience/govstyle/master/vignettes/figure/figure1d-1.png)
 
-The best source of docmentation is the [vignette](http://ukgovdatascience.github.io/govstyle/articles/absence_statistics.html).
- 
+The best source of docmentation is the [vignettes](https://github.com/ukgovdatascience/govstyle/blob/master/vignettes/absence_statistics.md).
+
 ## Installation
 
 To install, the package `devtools` is required, and can be installed with `install.packages('devtools')`.
@@ -27,9 +26,15 @@ To install, the package `devtools` is required, and can be installed with `insta
 Some users may not be able to use the `devtools::install_github()` commands as a result of network security settings.
 If this is the case, `govstyle` can be installed by downloading the [zip of the repository](https://github.com/ukgovdatascience/govstyle/archive/master.zip) and installing the package locally using `devtools::install_local(<path to zip file>)`.
 
-For testing purposes (not general usage), the package `visualTest` is required.
-This can be installed with `devtools::install_github('mangothecat/visualTest')`.
-For some users `devtools::install_local()` may also be required.
+### Installing older versions
+
+The package was revamped somewhat in January 2019.  If this breaks your existing
+code, try installling the original version with the following code.
+
+
+```r
+devtools::install_github("ukgovdatascience/govstyle", ref = "5d09353b14ccafda4e9c8676993fabf44fcfe5c1")
+```
 
 ## Functions
 
@@ -39,7 +44,7 @@ For some users `devtools::install_local()` may also be required.
 
 ## Examples
 
-See the [vignette](http://ukgovdatascience.github.io/govstyle/articles/absence_statistics.html) for in depth usage examples.
+See [Vignette](https://github.com/ukgovdatascience/govstyle/blob/master/vignettes/absence_statistics.md) for in depth usage examples.
 
 ### theme_gov
 

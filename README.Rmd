@@ -1,6 +1,6 @@
-[![Stories in Ready](https://badge.waffle.io/ukgovdatascience/govstyle.png?label=ready&title=Ready)](https://waffle.io/ukgovdatascience/govstyle)
-[![Build Status](https://travis-ci.org/ukgovdatascience/govstyle.svg?branch=master)](https://travis-ci.org/ukgovdatascience/govstyle)
-[![codecov.io](http://codecov.io/github/ukgovdatascience/govstyle/coverage.svg?branch=master)](http://codecov.io/github/ukgovdatascience/govstyle?branch=master)
+[![Travis build status](https://travis-ci.org/ukgovdatascience/govstyle.svg?branch=master)](https://travis-ci.org/ukgovdatascience/govstyle)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ukgovdatascience/govstyle?branch=master&svg=true)](https://ci.appveyor.com/project/ukgovdatascience/govstyle)
+[![Code coverage](http://codecov.io/github/ukgovdatascience/govstyle/coverage.svg?branch=master)](http://codecov.io/github/ukgovdatascience/govstyle?branch=master)
 [![GitHub tag](https://img.shields.io/github/tag/ukgovdatascience/govstyle.svg)]()
 
 # govstyle
